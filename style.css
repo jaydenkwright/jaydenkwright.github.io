@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    background: white;
+}
+
+.logo-container,.nav-links,.socials{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.socials{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.social-link{
+    margin: 0 20px 0px 20px;
+    justify-content: space-around;
+}
+
+.presentation{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    align-items: center;
+    background: #f5f5f5;
+    overflow-y: auto;
+}
+
+.introduction{
+    padding: 5%;
+    flex: 1;
+}
+
+.intro-title{
+    font-size: 7vh;
+    font-weight: 500;
+    color: #000000;
+    animation: fade 1s ease;
+}
+
+
+.intro-subtitle{
+    margin: 5px;
+    font-size: 3vh;
+    font-weight: 400;
+    color: #424242;
+    animation: fade 2s ease;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta{
+    padding: 30px 0px 0px 0px;
+}
+
+.cta-select{
+    background: #283593;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.cta-add{
+    border: 2px solid #283593;
+    background: transparent;
+    color: #283593;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    margin: 20px 0px 0px 10px;
+}
+
+.cover{
+    flex: 1;
+}
+
+.cover img{
+    height: 60vh;
+}
+
+.svg{
+    height: 60vh;
+}
+
+.project1{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    align-items: center;
+    background: #f67280;   
+}
+
+.project-container{
+    padding: 5%;
+    flex: 1;
+    order: 2;
+}
+
+.project-title{
+    font-size: 7vh;
+    font-weight: 500;
+    color: #000000;
+    animation: fade 1s ease;
+}
+
+.project-subtitle{
+    margin: 5px;
+    font-size: 3vh;
+    font-weight: 400;
+    color: #424242;
+    animation: fade 2s ease;
+}
+
+.screenshot1{
+    flex: 1;
+    padding-left: 5%;
+}
+
+.screenshot1 img{
+    height: 70vh;
+}
+
+.project-container2{
+    padding: 5%;
+    flex: 1;
+    order: 1;
+}
+
+.project2{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+    background: #8accf8;
+    overflow-y: auto;   
+}
+
+.project-title2{
+    font-size: 7vh;
+    font-weight: 500;
+    color: #000000;
+    animation: fade 1s ease;
+}
+
+.project-subtitle2{
+    margin: 5px;
+    font-size: 3vh;
+    font-weight: 400;
+    color: #424242;
+    animation: fade 2s ease;
+}
+
+.screenshot2{
+    flex: 1;
+    padding-left: 5%;
+    order: 2;
+}
+
+.screenshot2 img{
+    height: 70vh;
+}
+
+
+#Box_1{
+    animation: box 1s ease;
+}
+
+#Box_2{
+    animation: box .5s ease;
+    
+}
+
+#bar_1, #bar_2{
+    animation: box 1s ease;
+}
+
+#bar_3, #bar_4{
+    animation: box .7s ease;
+}
+
+#Circle{
+    animation: circle 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Arm_1{
+    animation: right_arm 3s ease infinite alternate;
+}
+
+@keyframes right_arm {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(20deg);
+    }
+}
+
+@keyframes circle {
+    from{
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes box {
+    from{
+        transform: rotateZ(-10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .presentation{
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+    .introduction{
+        text-align: center;
+    }
+    .cover{
+        order: 1;
+    }
+    .svg{
+        width: 100%;
+    }
+    .project1{
+        flex-direction: column;
+    }
+    .project{
+        text-align: center;
+        order: 1;
+    }
+    .screenshot1{
+        order: 2
+    }
+}
