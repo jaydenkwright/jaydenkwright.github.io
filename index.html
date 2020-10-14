@@ -10,25 +10,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <h4 class="logo">Jayden Wright</h4>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#project1">Projects</a></li>
-                <li><a class="nav-link" href="#">Resume</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-            </ul>
-        </nav>
-        <div class="socials">
-            <a class="social-link" target="_blank" href="https://github.com/jaydenkwright">
-                <img src="/images/github-logo.png" alt="Github">
-            </a>
-            <a class="social-link" target="_blank" href="https://www.linkedin.com/in/jayden-wright-208134187/">
-                <img src="/images/linkedin.png" alt="Linkedin">
-            </a>
-            <a class="social-link" target="_blank" href="mailto:jaydenkwright3@gmail.com">
-                <img src="/images/mail.png" alt="Email">
-            </a>
+            <h4 class="logo"><a href='mailto:jayden@jaydenkwright.com'>Jayden Wright</a></h4>
         </div>
     </header>
 
@@ -39,13 +21,13 @@
                     <h1>Jayden Wright</h1>
                 </div>
                 <div class="intro-subtitle">
-                    <p>Software Developer. New York</p>
+                    <p>Software Developer. New York.</p>
                 </div>
                 <div class="cta">
                     <button class="cta-select">
                         Resume
                     </button>
-                    <button onclick="location.href='#project1';" class="cta-add">
+                    <button onclick="document.getElementById('project3').scrollIntoView();" class="cta-add">
                         View Projects
                     </button>
                 </div>
@@ -117,6 +99,26 @@
                     </defs>
                     </svg>                    
             </div>
+        </section>
+        <section class="project3" id="project3">
+            <div class="project-container">
+                <div class="project-title">
+                    <h1>Project Planner</h1>
+                </div>
+                <div class="project-subtitle">
+                    <p>Project Planner built with React.JS (Typescript) and Flask</p>
+                </div>
+                <div class="cta">
+                    <button class="cta-select">
+                        Try it out!
+                    </button>
+                    <button onclick="window.open('https://github.com/jaydenkwright/project-planner')" class="cta-add">
+                        View Code
+                    </button>
+                </div>
+            </div>
+            <div class="screenshot3">
+                <img src="/images/projectplanner2.png" >
         </section>
         <section class="project1" id="project1">
             <div class="project-container">
